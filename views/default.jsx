@@ -8,13 +8,13 @@ function Def (html) {
         <title>Default View</title>
       </head>
       <body>
-        <h1>Default View</h1>
         {html.children}
       </body>
     </html>
   )
 }
 
+// Def is a component, note that it is capitalized
 // By creating this default view, we can just concentrate on each page content itself. This means, for every other page we won't need to worry about the HTML skeleton or anything like that, we just get to create a snippet of code that is unique to that page
 
 
