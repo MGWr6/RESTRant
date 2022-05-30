@@ -19,6 +19,8 @@ app.get('/', (req, res) => {
   // Note: You don't have to specify the 'views' folder. It already knows to look for a 'views' folder when you call the render method!
 })
 
+
+
 // WILDCARD ROUTE
 app.get('*', (req, res) => {
   res.render('error404')
