@@ -5,7 +5,7 @@ function Def (html) {
   return (
     <html>
       <head>
-        <title>Default View</title>
+        <title>*linked to default.jsx*</title>
       </head>
       <body>
         {html.children}
