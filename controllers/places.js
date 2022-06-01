@@ -9,14 +9,15 @@ router.get('/', (req, res) => {
       city: "Seattle",
       state: "WA",
       cuisines: "Thai, Pan-Asian",
-      pic: "http://placekitten.com/250/250",
+      pic: "/images/Green-Restaurant-Design.jpg",
     },
     {
       name: "Coding Cat Cafe",
       city: "Phoenix",
       state: "AZ",
       cuisines: "Coffee, Bakery",
-      pic: "http://placekitten.com/250/250",
+      pic: "/images/Tea-House-Inside.jpg",
+      // why do we not have to put public/images... it doesn't render the photo when you write it that way
     },
   ]
   res.render('places/index', { places })
