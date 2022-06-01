@@ -7,7 +7,7 @@ function error404 () {
     <Def>
       <main>
         <h1>404: PAGE NOT FOUND</h1>
-        <h2>Uh oh! We can't seem to find this page! It either doesn't exist or you suck and can't write a proper url.  ¯\_(ツ)_/¯</h2>
+        <h2>Uh oh! We can't seem to find this page! It either doesn't exist or an incorrect address was entered.  ¯\_(ツ)_/¯</h2>
       </main>
     </Def>
   )
