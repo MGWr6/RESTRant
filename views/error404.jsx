@@ -8,6 +8,12 @@ function error404 () {
       <main>
         <h1>404: PAGE NOT FOUND</h1>
         <h2>Uh oh! We can't seem to find this page! It either doesn't exist or an incorrect address was entered.  ¯\_(ツ)_/¯</h2>
+        <div>
+          <img src="/images/uh-oh-monkey.jpg" alt="404 Monkey Pic" />
+          <div>
+            Photo by <a href="https://unsplash.com/es/@haughters?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sam Moghadeam Khamesh</a> on <a href="https://unsplash.com/images/animals/monkey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </div>
+        </div>
       </main>
     </Def>
   )

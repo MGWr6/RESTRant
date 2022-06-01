@@ -1,4 +1,17 @@
+body {
+  background-color: white;
+}
+
 h1 {
   text-align: center;
   color: cornflowerblue;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+img {
+  width:540px;
+  height: auto;
 }
