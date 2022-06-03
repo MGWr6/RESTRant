@@ -7,7 +7,7 @@ function home () {
   return (
     <Def>
       <main>
-        <h1>HOME</h1>
+        <h1>REST-Rant</h1>
         <div>
           <img src="/images/pancakes.jpg" alt="Pancake Pic" />
           <div>
@@ -15,7 +15,7 @@ function home () {
           </div>
         </div>
         <a href="/places">
-          <button className="btn-primary">Places Page</button>
+          <button className="btn-primary">Rant or Rave!</button>
         </a>
       </main>
     </Def>
