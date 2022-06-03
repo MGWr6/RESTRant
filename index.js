@@ -14,9 +14,14 @@ app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
 // This let's Express know that we've created a public (or static) folder and what we're calling it
 
+app.use(express.urlencoded({ extended: true }))
+// Remember, when we send data with the POST verb, that data gets encrypted for its trip across the internet. Because it is protected this way while in transit, that makes it extra safe for usernames, passwords, and other sensitive data. However, it also means we will need an extra tool to decrypt that data for us.
+
 // CONTROLLERS & ROUTES
 app.use('/places', require('./controllers/places'))
 // The first argument to app.use, /places sets all routes in the places controller relative to /places. This means that /places will be added in front of any other path we define in the controller.
+
+
 
 app.get('/', (req, res) => {
   res.render('home')
