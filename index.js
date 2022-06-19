@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express')
+const methodOverride = require('method-override')
 const app = express()
 
 // MIDDLEWARE
@@ -16,6 +17,9 @@ app.use(express.static('public'))
 
 app.use(express.urlencoded({ extended: true }))
 // Remember, when we send data with the POST verb, that data gets encrypted for its trip across the internet. Because it is protected this way while in transit, that makes it extra safe for usernames, passwords, and other sensitive data. However, it also means we will need an extra tool to decrypt that data for us.
+
+app.use(methodOverride('_method'))
+// Add an app.use() statement that specifies _method as the keyword to change methods when we need to. We will be using the query string method.
 
 // CONTROLLERS & ROUTES
 app.use('/places', require('./controllers/places'))
