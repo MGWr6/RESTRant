@@ -15,6 +15,10 @@ main {
   background-color: white;
 }
 
+form {
+  display: inline;
+}
+
 h1 {
   text-align: center;
   color: cornflowerblue;
