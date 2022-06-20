@@ -11,7 +11,7 @@ router.get('/new', (req, res) => {
   res.render('places/new')
 })
 
-
+// Create a place
 router.post('/', (req, res) => {
   console.log(req.body)
   if (!req.body.pic) {
@@ -29,7 +29,7 @@ router.post('/', (req, res) => {
 })
 
 
-
+// (EDIT/ DELETE BUTTONS PAGE) Details about a particular place
 router.get('/:id', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
@@ -47,6 +47,7 @@ router.put('/:id', (req, res) => {
   res.send('PUT /places/:id stub')
 })
 
+// Delete a particular place
 router.delete('/:id', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
@@ -61,8 +62,18 @@ router.delete('/:id', (req, res) => {
   }
 })
 
+// Form page for editing an existing place
 router.get('/:id/edit', (req, res) => {
-  res.send('GET /places/:id/edit stub')
+  let id = Number(req.params.id)
+  if (isNaN(id)) {
+    res.render('error404')
+  }
+  else if (!places[id]) {
+    res.render('error404')
+  }
+  else {
+    res.render('places/edit', { place: places[id] })
+  }
 })
 
 router.post('/:id/rant', (req, res) => {
