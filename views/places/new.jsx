@@ -16,7 +16,7 @@ function new_form() {
           <div className="form-group">
           {/* Note: JSX requires the class attribute to be written as className. */}
             <label htmlFor="pic">Place Picture</label>
-            <input  className="form-control" type="url" id="pic" name="pic" />
+            <input  className="form-control" id="pic" name="pic" />
           </div>
           <div className="form-group">
             <label htmlFor="city">City</label>
@@ -25,6 +25,10 @@ function new_form() {
           <div className="form-group">
             <label htmlFor="state">State</label>
             <input className="form-control" id="state" name="state" />
+          </div>
+          <div className="form-group">
+            <label for="founded">Founded Year</label>
+            <input className="form-control" id="founded" name="founded" />
           </div>
           <div className="form-group">
             <label htmlFor="cuisines">Cuisines</label>
